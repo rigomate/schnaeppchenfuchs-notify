@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from firestick import NumberFromGermanMonth
+from germanMonth import NumberFromGermanMonth
 
 
 class TestNumberFromGermanMonth(TestCase):

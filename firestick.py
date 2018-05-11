@@ -6,6 +6,7 @@ import base64
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from apiclient import errors, discovery
+from germanMonth import NumberFromGermanMonth
 
 # Import requests (to download the page)
 import requests
@@ -76,31 +77,6 @@ def SendEmail(msgPlain):
     msgHtml = msgPlain
     SendMessage(sender, to, subject, msgHtml, msgPlain)
 
-def NumberFromGermanMonth(monthname):
-    if (monthname == "Januar"):
-        return 1
-    elif (monthname == "Februar"):
-        return 2
-    elif (monthname == "März"):
-        return 3
-    elif (monthname == "April"):
-        return 4
-    elif (monthname == "Mai"):
-        return 5
-    elif (monthname == "Juni"):
-        return 6
-    elif (monthname == "Juli"):
-        return 7
-    elif (monthname == "August"):
-        return 8
-    elif (monthname == "September"):
-        return 9
-    elif (monthname == "Oktober"):
-        return 10
-    elif (monthname == "November"):
-        return 11
-    elif (monthname == "Dezember"):
-        return 12
 
 def main():
     # set the url as VentureBeat,

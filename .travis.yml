@@ -5,9 +5,6 @@ python:
   - "3.5.3"
 
 before_install:
- - pip install discover
- - pip install httplib2
- - pip install pip install --upgrade google-api-python-client
 
 script:
  - python -m unittest discover
