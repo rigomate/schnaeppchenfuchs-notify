@@ -2,10 +2,11 @@ language: python
 
 python:
 
-  - "3.5"
+  - "3.5.3"
 
 before_install:
  - pip install discover
+ - pip install httplib2
 
 script:
  - python -m unittest discover
